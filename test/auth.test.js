@@ -1,12 +1,10 @@
 const request = require('supertest');
 const express = require('express');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
 const User = require('../model/user');
 const authRoutes = require('../routes/user');
-const jwtSecret = process.env.JWT_SECRET
 const saltRounds = 10;
 
 const app = express();
