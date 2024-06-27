@@ -7,15 +7,13 @@
     "test": "jest",
     "dev": "nodemon ./server.js"
   },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "./jest.setup.js"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-jest": "^29.7.0",
     "nodemon": "^3.1.4"
   },
   "dependencies": {
